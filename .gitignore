@@ -1,0 +1,15 @@
+# ICM convention: stage outputs are not committed.
+# Outputs are per-run artifacts (Layer 4). Only structure is versioned.
+stages/*/output/*
+!stages/*/output/.gitkeep
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Secrets
+.env
+.env.*
